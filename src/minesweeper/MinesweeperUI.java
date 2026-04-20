@@ -78,15 +78,15 @@ public class MinesweeperUI extends JFrame {
                     boolean hitMine = board.revealCell(row, col);
                     refreshBoard();
                     if (hitMine) {
-                        showEndDialog("Game over! You hit a mine.");
+                        showEndDialog("Game over");
                     } else if (board.isWin()) {
-                        showEndDialog("You won! Great job.");
+                        showEndDialog("You won");
                     }
                 } else if (event.getButton() == MouseEvent.BUTTON3) {
                     board.toggleFlag(row, col);
                     refreshBoard();
                     if (board.isWin()) {
-                        showEndDialog("You won! Great job.");
+                        showEndDialog("You won");
                     }
                 }
             }
