@@ -1,0 +1,18 @@
+# Build output
+out/
+dist/
+*.class
+*.jar
+
+# IDE/editor
+.idea/
+.vscode/
+*.iml
+
+# OS/system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
